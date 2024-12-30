@@ -1,0 +1,15 @@
+{
+  "name": "myapi",
+  "version": "1.0.0",
+  "description": "- How API's are made\r - How they are updated and edited\r - How they are hosted\r - The various languages they can be written in",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
