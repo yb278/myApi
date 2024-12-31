@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4c69ae4a-b084-4953-80b1-84a0f0019d86",
+		"_postman_id": "e0bc43ba-7538-4594-81b5-fa89580463ca",
 		"name": "Basic Commands",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "38966764"
@@ -26,21 +26,35 @@
 			"response": []
 		},
 		{
-			"name": "Get Specific Merchant",
+			"name": "Get Merchant by ID",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/api/merchants/2",
+					"raw": "{{URL}}/api/merchants/?name=BurgerKing",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"api",
 						"merchants",
-						"2"
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "BurgerKing"
+						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Merchant by Type",
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		},
