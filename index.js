@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json()); //Adding middleware 
 
-let courses = [
+const courses = [
     {id:1, name: 'course1'},
     {id:2, name: 'course2'},
     {id:3, name: 'course3'},
@@ -59,6 +59,19 @@ app.put('/api/courses/:id' , (req, res)=>{
     res.send(course);
 
 });
+
+//DELETE
+app.delete('/api/courses/:id' , (req, res)=>{
+    let course = courses.find(c => c.id === parseInt(req.params.id));
+    if(!course) res.status(404).send('Course not found'); 
+
+    const index = courses.indexOf(course);
+    courses.splice(index,1);
+    
+    res.send(course);
+});
+
+
 
 //Validation Function
 function validateCourse(course){
