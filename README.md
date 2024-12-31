@@ -7,5 +7,6 @@
 
 
 ### Various modules I have Used
-- Express
-- Nodemon
+- Express, 
+- Nodemon, ease of use 
+- Joi, input validation
