@@ -63,6 +63,19 @@ router.get('/api/merchants', (req, res) => {
     res.send(merchants);
 });
 
+//GET merchant by name
+router.get('/api/merchants/name/:name', (req, res) => {
+    const merchants = readMerchantsFromExcel();
+    const name = req.params.name.trim().toLowerCase();
+    const filteredMerchants = merchants.filter(m => m.name.trim().toLowerCase() === name);
+
+    if (filteredMerchants.length === 0) {
+        res.status(404).send('No merchants found with the specified name');
+        return;
+    }
+    res.send(filteredMerchants);
+});
+
 // GET a specific merchant by ID
 router.get('/api/merchants/:id', (req, res) => {
     const merchants = readMerchantsFromExcel();
