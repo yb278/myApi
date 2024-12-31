@@ -35,3 +35,7 @@ cd myapi
 - POST /api/merchants: Create a new merchant
 - PUT /api/merchants/:id: Update an existing merchant by ID
 - DELETE /api/merchants/:id: Delete a merchant by ID
+
+## Postman
+Import Basic Commands file as a collection
+In environment create a variable 'URL' with initial value as localhost:whateveryouuse
