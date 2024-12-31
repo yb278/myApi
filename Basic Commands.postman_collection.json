@@ -31,20 +31,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/api/merchants/?name=BurgerKing",
+					"raw": "{{URL}}/api/merchants/1",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"api",
 						"merchants",
-						""
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "BurgerKing"
-						}
+						"1"
 					]
 				}
 			},
@@ -54,7 +48,39 @@
 			"name": "Get Merchant by Type",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/merchants/foodType/fastfood",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"merchants",
+						"foodType",
+						"fastfood"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Merchant by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/merchants/name/Burgerking",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"merchants",
+						"name",
+						"Burgerking"
+					]
+				}
 			},
 			"response": []
 		},
