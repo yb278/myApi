@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My API</title>
+    <style>
+        #status {
+            font-weight: bold;
+            color: red;
+        }
+        #status.connected {
+            color: green;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My API</h1>
-    <p>This is a basic webpage served by the API.</p>
+    <p id="status">Spreadsheet Status: Not Connected</p>
+    <script>
+        fetch('/api/status')
+            .then(response => response.json())
+            .then(data => {
+                const statusElement = document.getElementById('status');
+                if (data.connected) {
+                    statusElement.textContent = 'Spreadsheet Status: Connected';
+                    statusElement.classList.add('connected');
+                } else {
+                    statusElement.textContent = 'Spreadsheet Status: Not Connected';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching status:', error);
+            });
+    </script>
 </body>
 </html>
