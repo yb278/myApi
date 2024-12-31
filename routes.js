@@ -74,6 +74,20 @@ router.get('/api/merchants/:id', (req, res) => {
     res.send(merchant);
 });
 
+// GET merchants by food type
+router.get('/api/merchants/foodType/:foodType', (req, res) => {
+    const merchants = readMerchantsFromExcel();
+    const foodType = req.params.foodType.trim().toLowerCase();
+    console.log(foodType);
+    const filteredMerchants = merchants.filter(m => m.foodType.trim().toLowerCase() === foodType);
+    
+    if (filteredMerchants.length === 0) {
+        res.status(404).send('No merchants found with the specified food type');
+        return;
+    }
+    res.send(filteredMerchants);
+});
+
 // POST a new merchant
 router.post('/api/merchants', (req, res) => {
     const merchants = readMerchantsFromExcel();
