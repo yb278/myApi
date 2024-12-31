@@ -13,7 +13,8 @@
   "dependencies": {
     "express": "^4.21.2",
     "joi": "^17.13.3",
-    "myapi": "file:"
+    "myapi": "file:",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
