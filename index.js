@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.get('/api/status', (req, res) => {
     try {
-        const workbook = xlsx.readFile(path.join(__dirname, 'merchants.xls'));
+        const workbook = xlsx.readFile(path.join(__dirname, '/merchants.xls'));
         res.json({ connected: true });
     } catch (error) {
         console.error('Error reading Excel file:', error);
