@@ -1,12 +1,36 @@
-# This is a small learning project on API's
-### What I intend to Learn
-- How API's are made
-- How they are updated and edited
-- How they are hosted
-- The various languages they can be written in
+# My API Project
 
+This project demonstrates how to create a simple API using Express and an Excel spreadsheet as a database.
 
-### Various modules I have Used
-- Express, HTTP tools
-- Nodemon, ease of use 
-- Joi, input validation
+## Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+## Setup
+
+1. **Clone the repository:**
+
+```sh
+git clone https://github.com/yourusername/myapi.git
+cd myapi
+```
+
+2. Run `npm install`
+
+3. `npm run dev`
+
+## API Endpoints
+GET /api/merchants: Retrieve all merchants
+GET /api/merchants/:id: Retrieve a specific merchant by ID
+POST /api/merchants: Create a new merchant
+PUT /api/merchants/:id: Update an existing merchant by ID
+DELETE /api/merchants/:id: Delete a merchant by ID
+
+Project Structure
+myApi/
+├── index.js
+├── routes.js
+├── merchants.xls
+├── package.json
+└── README.md
