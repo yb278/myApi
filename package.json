@@ -4,7 +4,8 @@
   "description": "- How API's are made\r - How they are updated and edited\r - How they are hosted\r - The various languages they can be written in",
   "main": "test.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
