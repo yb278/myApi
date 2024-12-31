@@ -16,13 +16,17 @@ git clone https://github.com/yb278/myapi.git
 cd myapi
 ```
 
-2. ```sh 
-    npm install
-    ```
+2. **Install libraries** 
 
-3. ```sh 
+```sh 
+    npm install
+```
+
+3. **Run project** 
+
+```sh 
     npm run dev
-    ```
+```
 
 ## API Endpoints
 
