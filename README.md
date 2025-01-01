@@ -7,7 +7,7 @@ This project is just to make a simple REST API using Express and an Excel spread
 - Node.js (v14 or higher)
 - npm (v6 or higher)
 
-![image](/Images/Status%20Page.png)
+![Status Page Image](https://github.com/yb278/myApi/blob/main/Images/Status%20Page.png)
 
 ## Setup
 
