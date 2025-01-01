@@ -31,14 +31,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/api/merchants/1",
+					"raw": "{{URL}}/api/merchants/9",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"api",
 						"merchants",
-						"1"
+						"9"
 					]
 				}
 			},
@@ -50,7 +50,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/api/merchants/foodType/fastfood",
+					"raw": "{{URL}}/api/merchants/foodType/restaurant",
 					"host": [
 						"{{URL}}"
 					],
@@ -58,7 +58,7 @@
 						"api",
 						"merchants",
 						"foodType",
-						"fastfood"
+						"restaurant"
 					]
 				}
 			},
@@ -70,7 +70,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/api/merchants/name/Burgerking",
+					"raw": "{{URL}}/api/merchants/name/tophut",
 					"host": [
 						"{{URL}}"
 					],
@@ -78,7 +78,7 @@
 						"api",
 						"merchants",
 						"name",
-						"Burgerking"
+						"tophut"
 					]
 				}
 			},
@@ -91,7 +91,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Damals\",\r\n    \"location\": \"Whitechapel\",\r\n    \"foodType\": \"Restaurant\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Dragons Den\",\r\n    \"location\": \"WhiteChapel\",\r\n    \"foodType\": \"Restaurant\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

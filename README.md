@@ -1,6 +1,6 @@
-# My API Project
+# A Basic REST API
 
-This project demonstrates how to create a simple API using Express and an Excel spreadsheet as a database.
+This project is just to make a simple REST API using Express and an Excel spreadsheet as a database. This will be used to learn for projects in the future.
 
 ## Prerequisites
 
